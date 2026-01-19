@@ -7,11 +7,19 @@ export default function Banner() {
   return (
     <section className="relative w-full min-h-screen overflow-hidden">
       {/* Background */}
-      <Image
+      {/* <Image
         src={BannerBg}
         alt="Banner background"
         fill
         className="object-cover -z-10"
+        priority
+      /> */}
+      <Image
+        src={BannerBg}
+        alt="Banner"
+        width={1920}
+        height={600}
+        className="w-full absolute h-screen top-0 left-0 max-h-screen"
         priority
       />
 
@@ -42,7 +50,7 @@ export default function Banner() {
           </p>
 
           {/* Services */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-8">
+          <div className="grid grid-cols-2 sm:grid-cols-2 gap-3 mt-8">
             {[1, 2, 3, 4].map((item) => (
               <span
                 key={item}
