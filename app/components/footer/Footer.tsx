@@ -33,7 +33,7 @@ export default function Footer() {
               (item) => (
                 <a
                   key={item}
-                  href="#"
+                  href={`#${item.toLowerCase()}`}
                   className="text-white/80 hover:text-white"
                 >
                   {item}

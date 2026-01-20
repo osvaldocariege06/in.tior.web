@@ -20,7 +20,7 @@ export default function Header() {
             (item) => (
               <a
                 key={item}
-                href="#"
+                href={`#${item.toLowerCase()}`}
                 className="text-[#1F2730] transition hover:text-blue-400"
               >
                 {item}
@@ -36,7 +36,7 @@ export default function Header() {
           </a>
           <a
             href="#"
-            className="text-blue-600 border border-blue-600 h-[47px] px-10 rounded-lg flex items-center"
+            className="text-blue-600 hover:text-white hover:bg-blue-600 transition-all active:scale-95 h-[47px] active:opacity-70 border border-blue-600 px-10 rounded-lg flex items-center"
           >
             Reservar
           </a>
@@ -74,7 +74,7 @@ export default function Header() {
               </a>
               <a
                 href="#"
-                className="text-blue-600 border border-blue-600 py-3 rounded-lg text-center"
+                className="text-blue-600 hover:text-white border border-blue-600 py-3 rounded-lg text-center hover:bg-blue-600 transition-all"
               >
                 Reservar
               </a>

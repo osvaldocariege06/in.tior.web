@@ -7,13 +7,7 @@ export default function Banner() {
   return (
     <section className="relative w-full min-h-screen overflow-hidden">
       {/* Background */}
-      {/* <Image
-        src={BannerBg}
-        alt="Banner background"
-        fill
-        className="object-cover -z-10"
-        priority
-      /> */}
+
       <Image
         src={BannerBg}
         alt="Banner"
@@ -25,7 +19,7 @@ export default function Banner() {
 
       <Header />
 
-      <div className="max-w-7xl mx-auto px-6 pt-24 flex flex-col xl:flex-row items-center gap-16">
+      <div className="max-w-7xl mx-auto px-6 pt-10 xl:pt-24 flex flex-col xl:flex-row items-center gap-16">
         {/* Content */}
         <div className="max-w-xl text-center xl:text-left">
           <div className="flex items-center gap-1 mb-8 justify-center xl:justify-start">
@@ -50,16 +44,18 @@ export default function Banner() {
           </p>
 
           {/* Services */}
-          <div className="grid grid-cols-2 sm:grid-cols-2 gap-3 mt-8">
-            {[1, 2, 3, 4].map((item) => (
-              <span
-                key={item}
-                className="flex items-center gap-2 text-[#1F2730] text-sm"
-              >
-                <Link2Icon size={16} color="#8314E2" />
-                Consulting
-              </span>
-            ))}
+          <div className="flex items-center w-auto justify-center xl:justify-start mt-8">
+            <div className="grid grid-cols-2 w-auto sm:grid-cols-2 gap-3">
+              {[1, 2, 3, 4].map((item) => (
+                <span
+                  key={item}
+                  className="flex items-center text-center gap-2 text-[#1F2730] text-sm"
+                >
+                  <Link2Icon size={16} color="#8314E2" />
+                  Consulting
+                </span>
+              ))}
+            </div>
           </div>
         </div>
 
